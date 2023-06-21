@@ -6,20 +6,34 @@ import {
   ImageBackground,
   Dimensions,
 } from "react-native";
-import { CarouselText } from "./Text";
+import { CarouselText, CarouselDescription } from "./Text";
 
-const OFFSET = 40;
+const OFFSET = 50;
 const ITEM_WIDTH = Dimensions.get("window").width - OFFSET * 2;
-const ITEM_HEIGHT = 300;
+const ITEM_HEIGHT = 420;
 
 const cards = [
   {
     id: 0,
-    title: "Lista completa armadio",
-    posterUrl: require("../assets/bg.png"),
+    title: "Carica il tuo guardaroba",
+    posterUrl: require("../assets/armadio.jpg"),
+    description:
+      "Inquadra i tuoi capi con la fotocamera,\n al resto ci pensiamo noi, scannerizziamo i tuoi capi e li cataloreghemo per categorie.",
   },
-  { id: 1, title: "Abbinamenti", posterUrl: require("../assets/bg.png") },
-  { id: 2, title: "DeCluttering", posterUrl: require("../assets/bg.png") },
+  {
+    id: 1,
+    title: "Abbinamenti in un click",
+    posterUrl: require("../assets/abbinamenti.jpg"),
+    description:
+      "Non sai cosa indossare?\nLasciati ispirare dal nostro algoritmo, i migliori look pensati esclusivamente per te.",
+  },
+  {
+    id: 2,
+    title: "DeCluttering",
+    posterUrl: require("../assets/decluttering.jpg"),
+    description:
+      "Hai troppi vestiti? \n Ti avviseremo quando non utilizzi più un'abito, così potrai metterlo in vendita.",
+  },
 ];
 
 export default function AdvancedCardCarousel() {
@@ -31,7 +45,7 @@ export default function AdvancedCardCarousel() {
         horizontal={true}
         decelerationRate={"normal"}
         snapToInterval={ITEM_WIDTH}
-        style={{ marginTop: 40, paddingHorizontal: 0 }}
+        style={{ marginTop: 50, paddingHorizontal: 0 }}
         showsHorizontalScrollIndicator={false}
         bounces={false}
         disableIntervalMomentum
@@ -76,9 +90,10 @@ export default function AdvancedCardCarousel() {
                   resizeMode: "cover",
                   justifyContent: "center",
                 }}
-                imageStyle={{ borderRadius: 6 }}
+                imageStyle={{ borderRadius: 10 }}
               />
               <CarouselText>{item.title}</CarouselText>
+              <CarouselDescription>{item.description}</CarouselDescription>
             </Animated.View>
           );
         })}

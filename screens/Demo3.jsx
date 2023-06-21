@@ -1,8 +1,9 @@
 import { StyleSheet, View, ImageBackground, Text } from "react-native";
-import { ButtonTextLight, LogoText } from "../components/Text";
+import { ButtonText, LogoText } from "../components/Text";
+import { Dropdown } from "../components/Dropdown";
 import { Select } from "../components/Switch";
 
-const Demo = () => {
+const DemoThird = () => {
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -19,6 +20,7 @@ const Demo = () => {
           <Text>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
           </Text>
+          <Dropdown />
           <Select />
         </View>
       </ImageBackground>
@@ -26,23 +28,4 @@ const Demo = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    alignItems: "center",
-  },
-  title: {
-    alignItems: "center",
-    marginTop: 60,
-  },
-  subtitle: {
-    alignItems: "center",
-    marginTop: 20,
-  },
-  containerTwo: {
-    alignItems: "center",
-    marginTop: 220,
-    width: "100%",
-  },
-});
-
-export { Demo };
+export { DemoThird };

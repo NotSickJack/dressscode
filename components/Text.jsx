@@ -5,21 +5,22 @@ const LogoText = styled.Text`
   color: #1a0047;
   font-weight: bold;
   text-align: center;
-  font-family: 'PPneuemachinaBold';
+  font-family: "PPneuemachinaBold";
 `;
 
 const ButtonText = styled.Text`
   font-size: 18px;
   color: #fff;
-  font-weight: bold;
   text-transform: uppercase;
+  font-family: PPneuemachinaRegular;
+  align-items: center;
 `;
 
 const ButtonTextLight = styled.Text`
   font-size: 18px;
   color: #5c159d;
-  font-weight: bold;
   text-transform: uppercase;
+  font-family: PPneuemachinaRegular;
 `;
 
 const InputText = styled.TextInput`
@@ -46,8 +47,16 @@ const CarouselText = styled.Text`
   color: #1a0047;
   font-weight: bold;
   text-align: center;
-  margin-top: 20px;
-  font-family: 'PPneuemachinaBold';
+  margin-top: 10px;
+  font-family: "PPneuemachinaBold";
+`;
+
+const CarouselDescription = styled.Text`
+  font-size: 18px;
+  color: #1a0047;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "FoundersGroteskRegular";
 `;
 
 export {
@@ -57,4 +66,5 @@ export {
   InputText,
   CarouselText,
   MainText,
+  CarouselDescription,
 };

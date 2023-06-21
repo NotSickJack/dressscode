@@ -17,16 +17,14 @@ const Dropdown = () => {
       data={data}
       search={false}
       save="value"
-      arrowicon={<FontAwesome name="chevron-down" size={18} color={"white"} />}
-      searchicon={<FontAwesome name="search" size={18} color={"white"} />}
-      closeicon={<FontAwesome name="times" size={18} color={"white"} />}
-      searchPlaceholder="Cerca"
+      arrowicon={<FontAwesome name="chevron-down" size={16} color={"white"} />}
+      searchicon={<FontAwesome name="search" size={15} color={"white"} />}
+      closeicon={<FontAwesome name="times" size={15} color={"white"} />}
       placeholder="Seleziona il tuo genere"
       defaultValue={selected}
-      notFoundText="Nessun risultato"
       boxStyles={{
         width: 320,
-        borderRadius: 20,
+        borderRadius: 15,
         backgroundColor: "#1a0047",
         borderColor: "#1a0047",
       }}

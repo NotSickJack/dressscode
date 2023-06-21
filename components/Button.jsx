@@ -1,20 +1,18 @@
 import styled from "styled-components/native";
 
-const RegisterButton = styled.Pressable`
+const DarkButton = styled.Pressable`
   background-color: #1a0047;
-  padding: 10px 20px;
   border-radius: 20%;
   width: 320px;
   height: 60px;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 `;
 
-const LoginButton = styled.Pressable`
+const LightButton = styled.Pressable`
   background-color: #fff;
-  padding: 10px 20px;
   border-radius: 20%;
   width: 320px;
   height: 60px;
@@ -23,4 +21,4 @@ const LoginButton = styled.Pressable`
   margin-bottom: 20px;
 `;
 
-export { RegisterButton, LoginButton };
+export { DarkButton, LightButton };
