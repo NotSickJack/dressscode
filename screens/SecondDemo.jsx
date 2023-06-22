@@ -1,7 +1,7 @@
 import { StyleSheet, View, ImageBackground, Text } from "react-native";
 import { ButtonText, LogoText, MainText } from "../components/Text";
 import { DarkButton } from "../components/Button";
-import { Select } from "../components/Switch";
+import { SelectColor } from "../components/SelectColor";
 
 const DemoTwo = ({ navigation }) => {
   return (
@@ -13,15 +13,14 @@ const DemoTwo = ({ navigation }) => {
         <LogoText style={styles.title}>
           Dress<Text style={{ color: "#fff" }}>Code</Text>
         </LogoText>
-        <MainText>
-          In questa Demo, ti mostreremo come funziona l'applicazione.
-        </MainText>
         <View style={styles.containerTwo}>
-          <MainText>Scegli il genere:</MainText>
-          <Select />
+          <MainText style={{ marginTop: 10 }}>
+            Puoi scegliere fino a tre colori:
+          </MainText>
+          <SelectColor />
         </View>
         <View style={styles.container}>
-          <DarkButton onPress={() => navigation.navigate("")}>
+          <DarkButton onPress={() => navigation.navigate("DemoThree")}>
             <ButtonText>Avanti</ButtonText>
           </DarkButton>
         </View>
@@ -45,7 +44,6 @@ const styles = StyleSheet.create({
   containerTwo: {
     flex: 1,
     alignItems: "center",
-    marginTop: 200,
     width: "100%",
   },
 });

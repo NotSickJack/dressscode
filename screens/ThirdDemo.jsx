@@ -13,19 +13,20 @@ const DemoThird = () => {
         <LogoText style={styles.title}>
           Dress<Text style={{ color: "#fff" }}>Code</Text>
         </LogoText>
-        <Text>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        </Text>
-        <View style={styles.containerTwo}>
-          <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          </Text>
-          <Dropdown />
-          <Select />
-        </View>
       </ImageBackground>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+  },
+  title: {
+    alignItems: "center",
+    marginTop: 60,
+  },
+});
 
 export { DemoThird };
