@@ -2,10 +2,8 @@ import { StyleSheet, View, ImageBackground, Text } from "react-native";
 import { ButtonText, LogoText, MainText } from "../components/Text";
 import { DarkButton } from "../components/Button";
 import { Select } from "../components/Switch";
-import { DemoTwo } from "./SecondDemo";
-import { Dropdown } from "../components/Dropdown";
 
-const Demo = ({ navigation }) => {
+const DemoTwo = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -23,7 +21,7 @@ const Demo = ({ navigation }) => {
           <Select />
         </View>
         <View style={styles.container}>
-          <DarkButton onPress={() => navigation.navigate("DemoTwo")}>
+          <DarkButton onPress={() => navigation.navigate("")}>
             <ButtonText>Avanti</ButtonText>
           </DarkButton>
         </View>
@@ -52,4 +50,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export { Demo };
+export { DemoTwo };

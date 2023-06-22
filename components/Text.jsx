@@ -36,10 +36,10 @@ const InputText = styled.TextInput`
 
 const MainText = styled.Text`
   font-size: 18px;
-  color: #000;
-  font-weight: bold;
-  tac-align: center;
-  margin-top: 20px;
+  color: #1a0047;
+  margin: 0 40px;
+  text-align: center;
+  font-family: "FoundersGroteskRegular";
 `;
 
 const CarouselText = styled.Text`
