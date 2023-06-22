@@ -6,21 +6,34 @@ const Dropdown = () => {
   const [selected, setSelected] = React.useState("");
 
   const data = [
-    { key: "1", value: "Uomo" },
-    { key: "2", value: "Donna" },
-    { key: "3", value: "Unisex" },
+    { key: "1", value: "Casual" },
+    { key: "2", value: "Formale" },
+    { key: "4", value: "Business" },
+    { key: "5", value: "Sportivo" },
+    { key: "6", value: "Boho" },
+    { key: "7", value: "Streetwear" },
+    { key: "8", value: "Classico" },
+    { key: "9", value: "Vintage" },
+    { key: "10", value: "Minimalista" },
+    { key: "11", value: "Punk" },
+    { key: "12", value: "Eclettico" },
+    { key: "13", value: "Rocker" },
+    { key: "14", value: "Glamour" },
+    { key: "15", value: "Artistic" },
+    { key: "16", value: "Retro" },
   ];
 
   return (
     <SelectList
       setSelected={(val) => setSelected(val)}
       data={data}
-      search={false}
+      search={true}
       save="value"
-      arrowicon={<FontAwesome name="chevron-down" size={16} color={"white"} />}
+      arrowicon={<FontAwesome name="chevron-down" size={15} color={"white"} />}
       searchicon={<FontAwesome name="search" size={15} color={"white"} />}
       closeicon={<FontAwesome name="times" size={15} color={"white"} />}
-      placeholder="Seleziona il tuo genere"
+      placeholder="Selezionare stile desiderato:"
+      placeholderStyle={{ color: "#fff" }}
       defaultValue={selected}
       boxStyles={{
         width: 320,
@@ -30,23 +43,24 @@ const Dropdown = () => {
       }}
       inputStyles={{
         color: "#fff",
-        fontSize: 18,
-        fontWeight: "bold",
+        fontSize: 16,
+        fontFamily: "PPneuemachinaRegular",
+        marginLeft: 10,
       }}
       dropdownStyles={{
         width: 320,
         borderRadius: 20,
-        backgroundColor: "#1a0047",
-        height: "auto",
-        borderColor: "#1a0047",
+        backgroundColor: "#fff",
+        borderColor: "#fff",
       }}
       dropdownTextStyles={{
-        color: "#fff",
+        color: "#1a0047",
         fontSize: 18,
         fontWeight: "bold",
+        fontFamily: "FoundersGroteskRegular",
       }}
       dropdownItemStyles={{
-        backgroundColor: "#1a0047",
+        color: "#1a0047",
       }}
     />
   );

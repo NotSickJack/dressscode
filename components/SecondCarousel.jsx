@@ -15,28 +15,28 @@ const ITEM_HEIGHT = 420;
 const cards = [
   {
     id: 0,
-    title: "Carica il tuo guardaroba",
+    title: "Scarpe",
     posterUrl: require("../assets/carousel-home/armadio.jpg"),
     description:
       "Inquadra i tuoi capi con la fotocamera,\n al resto ci pensiamo noi, scannerizziamo i tuoi capi e li cataloreghemo per categorie.",
   },
   {
     id: 1,
-    title: "Abbinamenti in un click",
+    title: "Pantaloni",
     posterUrl: require("../assets/carousel-home/abbinamenti.jpg"),
     description:
       "Non sai cosa indossare?\nLasciati ispirare dal nostro algoritmo, i migliori look pensati esclusivamente per te.",
   },
   {
     id: 2,
-    title: "DeCluttering",
+    title: "Maglia",
     posterUrl: require("../assets/carousel-home/decluttering.jpg"),
     description:
       "Hai troppi vestiti? \n Ti avviseremo quando non utilizzi più un'abito, così potrai metterlo in vendita.",
   },
 ];
 
-export default function AdvancedCardCarousel() {
+export default function SecondCarousel() {
   const scrollX = React.useRef(new Animated.Value(0)).current;
 
   return (

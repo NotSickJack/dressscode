@@ -59,6 +59,15 @@ const CarouselDescription = styled.Text`
   font-family: "FoundersGroteskRegular";
 `;
 
+const TextUnderline = styled.Text`
+  font-size: 18px;
+  color: #1a0047;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "FoundersGroteskRegular";
+  text-decoration: underline;
+`;
+
 export {
   ButtonText,
   LogoText,
@@ -67,4 +76,5 @@ export {
   CarouselText,
   MainText,
   CarouselDescription,
+  TextUnderline,
 };

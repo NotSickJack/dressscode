@@ -30,8 +30,8 @@ const Select = () => {
         <Text style={styles.label}>Uomo</Text>
         <View style={styles.switchContainer}>
           <Switch
-            trackColor={{ false: "#767577", true: "#81b0ff" }}
-            thumbColor={switch1Enabled ? "#f5dd4b" : "#f4f3f4"}
+            trackColor={{ false: "#767577", true: "#f4f3f4" }}
+            thumbColor={switch1Enabled ? "#5c159d" : "#f4f3f4"}
             ios_backgroundColor="#3e3e3e"
             onValueChange={toggleSwitch1}
             value={switch1Enabled}
@@ -43,8 +43,8 @@ const Select = () => {
         <Text style={styles.label}>Donna</Text>
         <View style={styles.switchContainer}>
           <Switch
-            trackColor={{ false: "#767577", true: "#81b0ff" }}
-            thumbColor={switch2Enabled ? "#f5dd4b" : "#f4f3f4"}
+            trackColor={{ false: "#767577", true: "#f4f3f4" }}
+            thumbColor={switch2Enabled ? "#5c159d" : "#f4f3f4"}
             ios_backgroundColor="#3e3e3e"
             onValueChange={toggleSwitch2}
             value={switch2Enabled}
@@ -56,8 +56,8 @@ const Select = () => {
         <Text style={styles.label}>Unisex</Text>
         <View style={styles.switchContainer}>
           <Switch
-            trackColor={{ false: "#767577", true: "#81b0ff" }}
-            thumbColor={switch3Enabled ? "#f5dd4b" : "#f4f3f4"}
+            trackColor={{ false: "#767577", true: "#f4f3f4" }}
+            thumbColor={switch3Enabled ? "#5c159d" : "#f4f3f4"}
             ios_backgroundColor="#3e3e3e"
             onValueChange={toggleSwitch3}
             value={switch3Enabled}
@@ -81,13 +81,16 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     marginLeft: 80,
     marginRight: 80,
-    backgroundColor: "#f5f5f5",
+    backgroundColor: "#1a0047",
     borderWidth: 1,
-    borderColor: "#ddd",
+    borderColor: "#1a0047",
     borderRadius: 25,
     padding: 10,
   },
   label: {
+    color: "#fff",
+    fontFamily: "PPneuemachinaRegular",
+    fontWeight: 800,
     flex: 1,
   },
   switchContainer: {

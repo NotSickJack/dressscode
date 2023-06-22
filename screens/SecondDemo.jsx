@@ -19,7 +19,7 @@ const DemoTwo = ({ navigation }) => {
           </MainText>
           <SelectColor />
         </View>
-        <View style={styles.container}>
+        <View style={styles.containerThree}>
           <DarkButton onPress={() => navigation.navigate("DemoThree")}>
             <ButtonText>Avanti</ButtonText>
           </DarkButton>
@@ -32,6 +32,7 @@ const DemoTwo = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     alignItems: "center",
+    justifyContent: "center",
   },
   title: {
     alignItems: "center",
@@ -42,9 +43,14 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   containerTwo: {
-    flex: 1,
     alignItems: "center",
+    justifyContent: "center",
     width: "100%",
+  },
+  containerThree: {
+    alignItems: "center",
+    justifyContent: "center",
+    paddingTop: 40,
   },
 });
 

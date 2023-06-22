@@ -3,6 +3,7 @@ import { Home } from "../screens/Home";
 import { Demo } from "../screens/Demo";
 import { DemoTwo } from "../screens/SecondDemo";
 import { DemoThird } from "../screens/ThirdDemo";
+import { Result } from "../screens/Result";
 
 const Stack = createStackNavigator();
 
@@ -27,6 +28,11 @@ function MainStackNavigator() {
       <Stack.Screen
         name="DemoThree"
         component={DemoThird}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Result"
+        component={Result}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>
