@@ -1,5 +1,17 @@
 import styled from "styled-components/native";
 
+const SplashText = styled.Text`
+  font-size: 50px;
+  color: #1a0047;
+  font-family: "PPneuemachinaBold";
+`;
+
+const SplashTextTwo = styled.Text`
+  font-size: 50px;
+  color: #fff;
+  font-family: "PPneuemachinaBold";
+`;
+
 const LogoText = styled.Text`
   font-size: 50px;
   color: #1a0047;
@@ -69,6 +81,8 @@ const TextUnderline = styled.Text`
 `;
 
 export {
+  SplashText,
+  SplashTextTwo,
   ButtonText,
   LogoText,
   ButtonTextLight,

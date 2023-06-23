@@ -1,4 +1,5 @@
 import { createStackNavigator } from "@react-navigation/stack";
+import { SplashScreen } from "../screens/SplashScreen";
 import { Home } from "../screens/Home";
 import { Demo } from "../screens/Demo";
 import { DemoTwo } from "../screens/SecondDemo";
@@ -9,11 +10,20 @@ const Stack = createStackNavigator();
 
 function MainStackNavigator() {
   return (
-    <Stack.Navigator initialRouteName="Home">
+    <Stack.Navigator initialRouteName="Splash">
+      <Stack.Screen
+        name="Splash"
+        component={SplashScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
       <Stack.Screen
         name="Home"
         component={Home}
-        options={{ headerShown: false }}
+        options={{
+          headerShown: false,
+        }}
       />
       <Stack.Screen
         name="Demo"
