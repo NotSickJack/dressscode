@@ -2,8 +2,6 @@ import { StyleSheet, View, ImageBackground, Text } from "react-native";
 import { ButtonText, LogoText, MainText } from "../components/Text";
 import { DarkButton } from "../components/Button";
 import { Select } from "../components/Switch";
-import { DemoTwo } from "./SecondDemo";
-import { Dropdown } from "../components/Dropdown";
 
 const Demo = ({ navigation }) => {
   return (
@@ -15,6 +13,7 @@ const Demo = ({ navigation }) => {
         <LogoText style={styles.title}>
           Dress<Text style={{ color: "#fff" }}>Code</Text>
         </LogoText>
+
         <MainText>
           In questa Demo, ti mostreremo come funziona l'applicazione.
         </MainText>
