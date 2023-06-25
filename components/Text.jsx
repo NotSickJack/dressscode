@@ -80,6 +80,12 @@ const TextUnderline = styled.Text`
   text-decoration: underline;
 `;
 
+const LabelText = styled.Text`
+  font-size: 18px;
+  color: #1a0047;
+  font-family: "FoundersGroteskRegular";
+`;
+
 export {
   SplashText,
   SplashTextTwo,
@@ -91,4 +97,5 @@ export {
   MainText,
   CarouselDescription,
   TextUnderline,
+  LabelText,
 };

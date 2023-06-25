@@ -1,19 +1,7 @@
-import {
-  StyleSheet,
-  View,
-  ImageBackground,
-  SafeAreaView,
-  Text,
-} from "react-native";
-import {
-  ButtonText,
-  ButtonTextLight,
-  LogoText,
-  InputText,
-  TextUnderline,
-} from "../components/Text";
+import { StyleSheet, View, ImageBackground, Text } from "react-native";
+import { ButtonText, LogoText, TextUnderline } from "../components/Text";
 import { DarkButton, ButtonTryAgain } from "../components/Button";
-import { Div } from "../components/Div";
+import { DivCenter } from "../components/Div";
 import SecocondCarousel from "../components/SecondCarousel";
 
 const Result = ({ navigation }) => {
@@ -27,20 +15,15 @@ const Result = ({ navigation }) => {
           Dress<Text style={{ color: "#fff" }}>Code</Text>
         </LogoText>
         <SecocondCarousel />
-        {/* <View style={styles.form}> */}
-        {/*   <SafeAreaView> */}
-        {/*     <InputText placeholder="Email" /> */}
-        {/*     <InputText secureTextEntry={true} placeholder="Password" /> */}
-        {/*   </SafeAreaView> */}
-        {/* </View> */}
-        <Div>
+
+        <DivCenter>
           <ButtonTryAgain onPress={() => navigation.navigate("Demo")}>
             <TextUnderline>Riprova</TextUnderline>
           </ButtonTryAgain>
-          <DarkButton onPress={() => navigation.navigate("Demo")}>
-            <ButtonText>RIPROVA</ButtonText>
+          <DarkButton onPress={() => navigation.navigate("Media")}>
+            <ButtonText>avanti</ButtonText>
           </DarkButton>
-        </Div>
+        </DivCenter>
       </ImageBackground>
     </View>
   );

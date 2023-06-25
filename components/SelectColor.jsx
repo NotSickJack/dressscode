@@ -11,7 +11,7 @@ const SelectColor = () => {
 
     const selected = newSwitchStates.filter((state) => state);
     if (selected.length > 3) {
-      return; // Limite massimo di selezione raggiunto, non consentire il cambio di stato dello switch
+      return;
     }
 
     setSwitchStates(newSwitchStates);

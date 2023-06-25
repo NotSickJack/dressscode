@@ -5,14 +5,9 @@ import {
   SafeAreaView,
   Text,
 } from "react-native";
-import {
-  ButtonText,
-  ButtonTextLight,
-  LogoText,
-  InputText,
-} from "../components/Text";
+import { ButtonText, ButtonTextLight, LogoText } from "../components/Text";
 import { DarkButton, LightButton } from "../components/Button";
-import { Div } from "../components/Div";
+import { DivCenter } from "../components/Div";
 import AdvanceCardCarousel from "../components/Carousel";
 
 const Home = ({ navigation }) => {
@@ -26,20 +21,14 @@ const Home = ({ navigation }) => {
           Dress<Text style={{ color: "#fff" }}>Code</Text>
         </LogoText>
         <AdvanceCardCarousel />
-        {/* <View style={styles.form}> */}
-        {/*   <SafeAreaView> */}
-        {/*     <InputText placeholder="Email" /> */}
-        {/*     <InputText secureTextEntry={true} placeholder="Password" /> */}
-        {/*   </SafeAreaView> */}
-        {/* </View> */}
-        <Div>
-          <LightButton onPress={() => navigation.navigate("Demo")}>
+        <DivCenter>
+          <LightButton onPress={() => navigation.navigate("Login")}>
             <ButtonTextLight>Login</ButtonTextLight>
           </LightButton>
-          <DarkButton onPress={() => navigation.navigate("Demo")}>
+          <DarkButton onPress={() => navigation.navigate("Register")}>
             <ButtonText>Registrati</ButtonText>
           </DarkButton>
-        </Div>
+        </DivCenter>
       </ImageBackground>
     </View>
   );

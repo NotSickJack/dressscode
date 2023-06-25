@@ -5,6 +5,10 @@ import { Demo } from "../screens/Demo";
 import { DemoTwo } from "../screens/SecondDemo";
 import { DemoThird } from "../screens/ThirdDemo";
 import { Result } from "../screens/Result";
+import { Welcome } from "../screens/Welcome";
+import { Media } from "../screens/Camera";
+import Auth from "../screens/Login";
+import Register from "../screens/Register";
 
 const Stack = createStackNavigator();
 
@@ -26,6 +30,21 @@ function MainStackNavigator() {
         }}
       />
       <Stack.Screen
+        name="Login"
+        component={Auth}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Register"
+        component={Register}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Welcome"
+        component={Welcome}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
         name="Demo"
         component={Demo}
         options={{ headerShown: false }}
@@ -43,6 +62,11 @@ function MainStackNavigator() {
       <Stack.Screen
         name="Result"
         component={Result}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Media"
+        component={Media}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>

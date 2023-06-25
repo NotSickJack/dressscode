@@ -1,7 +1,9 @@
 import { StyleSheet, View, ImageBackground, Text } from "react-native";
-import { ButtonText, LogoText } from "../components/Text";
+import { ButtonText, LogoText, MainText } from "../components/Text";
 import { Dropdown } from "../components/Dropdown";
 import { DarkButton } from "../components/Button";
+import BackButton from "../components/Back";
+import { Div, DivCenter } from "../components/Div";
 
 const DemoThird = ({ navigation }) => {
   return (
@@ -10,17 +12,22 @@ const DemoThird = ({ navigation }) => {
         source={require("../assets/bg.png")}
         style={{ width: "100%", height: "100%" }}
       >
+        <View style={{ position: "absolute", left: 20, top: 50 }}>
+          <BackButton />
+        </View>
         <LogoText style={styles.title}>
           Dress<Text style={{ color: "#fff" }}>Code</Text>
         </LogoText>
-        <View style={styles.containerTwo}>
+        <MainText>Scegli il tipo di outfit:</MainText>
+        <Div>
           <Dropdown />
-        </View>
-        <View style={styles.containerThree}>
+        </Div>
+        <DivCenter>
+          <MainText style={{ marginBottom: 10 }}>3/3</MainText>
           <DarkButton onPress={() => navigation.navigate("Result")}>
             <ButtonText>Avanti</ButtonText>
           </DarkButton>
-        </View>
+        </DivCenter>
       </ImageBackground>
     </View>
   );
@@ -34,17 +41,6 @@ const styles = StyleSheet.create({
   title: {
     alignItems: "center",
     marginTop: 60,
-  },
-  containerTwo: {
-    alignItems: "center",
-    height: "60%",
-    justifyContent: "center",
-  },
-  containerThree: {
-    alignItems: "center",
-    justifyContent: "center",
-    paddingTop: 40,
-    height: "30%",
   },
 });
 

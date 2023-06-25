@@ -8,7 +8,7 @@ const DarkButton = styled.Pressable`
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 `;
 
 const LightButton = styled.Pressable`
