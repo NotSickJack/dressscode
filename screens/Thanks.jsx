@@ -14,7 +14,8 @@ const Thanks = ({ navigation }) => {
           Dress<Text style={{ color: "#fff" }}>Code</Text>
         </LogoText>
         <Div>
-          <MainText>Grazie per aver provato la demo di DressCode.</MainText>
+          <MainText>Grazie per aver provato la demo di DressCode. </MainText>
+          <MainText>❤️</MainText>
         </Div>
         <DivCenter>
           <DarkButton onPress={() => navigation.navigate("Home")}>

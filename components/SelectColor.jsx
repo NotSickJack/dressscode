@@ -55,16 +55,6 @@ const SelectColor = () => {
         thumbColor: "#ffffff",
         trackColorTwo: "#ffff00",
       },
-      Viola: {
-        trackColor: "#00ff00",
-        thumbColor: "#ffffff",
-        trackColorTwo: "#8f00ff",
-      },
-      Arancione: {
-        trackColor: "#00ff00",
-        thumbColor: "#ffffff",
-        trackColorTwo: "#ff7514",
-      },
     };
 
     return colorMap[label] || { trackColor: "#767577", thumbColor: "#f4f3f4" }; // Default
@@ -79,8 +69,6 @@ const SelectColor = () => {
       { label: "Blu" },
       { label: "Verde" },
       { label: "Giallo" },
-      { label: "Viola" },
-      { label: "Arancione" },
     ];
 
     return switches.map((switchObj, index) => {
