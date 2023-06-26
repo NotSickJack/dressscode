@@ -1,12 +1,12 @@
 import React from "react";
-import { TouchableOpacity } from "react-native";
 import { Feather } from "@expo/vector-icons";
+import { LightButton } from "./Button";
 
 const IconCamera = ({ takePhoto }) => {
   return (
-    <TouchableOpacity onPress={takePhoto} style={{ marginTop: 10 }}>
-      <Feather name="camera" size={40} color="black" />
-    </TouchableOpacity>
+    <LightButton onPress={takePhoto} style={{ marginTop: 20 }}>
+      <Feather name="camera" size={30} color="#1a0047" />
+    </LightButton>
   );
 };
 
