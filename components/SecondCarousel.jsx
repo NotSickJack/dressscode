@@ -8,31 +8,34 @@ import {
 } from "react-native";
 import { CarouselText, CarouselDescription } from "./Text";
 
-const OFFSET = 50;
+const OFFSET = 40;
 const ITEM_WIDTH = Dimensions.get("window").width - OFFSET * 2;
-const ITEM_HEIGHT = 420;
+const ITEM_HEIGHT = 500;
 
 const cards = [
   {
     id: 0,
     title: "Scarpe",
-    posterUrl: require("../assets/carousel-home/armadio.jpg"),
-    description:
-      "Inquadra i tuoi capi con la fotocamera,\n al resto ci pensiamo noi, scannerizziamo i tuoi capi e li cataloreghemo per categorie.",
+    posterUrl: require("../assets/carousel-result/scarpe.png"),
+    description: "Skate Vans Old School.",
   },
   {
     id: 1,
-    title: "Pantaloni",
-    posterUrl: require("../assets/carousel-home/abbinamenti.jpg"),
-    description:
-      "Non sai cosa indossare?\nLasciati ispirare dal nostro algoritmo, i migliori look pensati esclusivamente per te.",
+    title: "Jeans",
+    posterUrl: require("../assets/carousel-result/jeans.png"),
+    description: "Jeans Levi's 501.",
   },
   {
     id: 2,
-    title: "Maglia",
-    posterUrl: require("../assets/carousel-home/decluttering.jpg"),
-    description:
-      "Hai troppi vestiti? \n Ti avviseremo quando non utilizzi più un'abito, così potrai metterlo in vendita.",
+    title: "T-Shirt",
+    posterUrl: require("../assets/carousel-result/t-shirt.png"),
+    description: "T-Shirt bianca semplice.",
+  },
+  {
+    id: 3,
+    title: "Cappello",
+    posterUrl: require("../assets/carousel-result/cappello.png"),
+    description: "Cappello visiera piatta Obey.",
   },
 ];
 
@@ -88,10 +91,10 @@ export default function SecondCarousel() {
                 source={item.posterUrl}
                 style={{
                   flex: 1,
-                  resizeMode: "cover",
                   justifyContent: "center",
+                  alignItems: "center",
                 }}
-                imageStyle={{ borderRadius: 10 }}
+                imageStyle={{ borderRadius: 10, resizeMode: "contain" }}
               />
               <CarouselText>{item.title}</CarouselText>
               <CarouselDescription>{item.description}</CarouselDescription>

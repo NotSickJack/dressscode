@@ -15,21 +15,27 @@ const ITEM_HEIGHT = 420;
 const cards = [
   {
     id: 0,
-    title: "Carica il tuo guardaroba",
+    title: "Carica i tuoi vestiti",
     posterUrl: require("../assets/carousel-home/armadio.jpg"),
-    description:
-      "Inquadra i tuoi capi con la fotocamera,\n al resto ci pensiamo noi, scannerizziamo i tuoi capi e li cataloreghemo per categorie.",
+    description: "Fotografa i tuoi capi,\n al resto ci pensiamo noi.",
   },
   {
     id: 1,
-    title: "Abbinamenti in un click",
+    title: "Non sai cosa indossare?",
     posterUrl: require("../assets/carousel-home/abbinamenti.jpg"),
     description:
-      "Non sai cosa indossare?\nLasciati ispirare dal nostro algoritmo, i migliori look pensati esclusivamente per te.",
+      "Lasciati ispirare da noi, i migliori look pensati esclusivamente per te.",
   },
   {
     id: 2,
-    title: "DeCluttering",
+    title: "Goditi i tuoi oufit",
+    posterUrl: require("../assets/carousel-home/outfit.jpg"),
+    description:
+      "Creiamo per te gli outfit migliori,\n in base alle tue esigenze e al tuo stile.",
+  },
+  {
+    id: 3,
+    title: "Decluttering",
     posterUrl: require("../assets/carousel-home/decluttering.jpg"),
     description:
       "Hai troppi vestiti? \n Ti avviseremo quando non utilizzi più un'abito, così potrai metterlo in vendita.",
