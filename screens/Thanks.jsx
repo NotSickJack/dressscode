@@ -2,9 +2,8 @@ import { StyleSheet, View, ImageBackground, Text } from "react-native";
 import { ButtonText, LogoText, MainText } from "../components/Text";
 import { DarkButton } from "../components/Button";
 import { Div, DivCenter } from "../components/Div";
-import CameraComponent from "../components/Camera";
 
-const Media = ({ navigation }) => {
+const Thanks = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -14,14 +13,11 @@ const Media = ({ navigation }) => {
         <LogoText style={styles.title}>
           Dress<Text style={{ color: "#fff" }}>Code</Text>
         </LogoText>
-        <MainText>
-          Inquadra i tuoi capi e scatta una foto per aggiungerli al tuo armadio.
-        </MainText>
         <Div>
-          <CameraComponent />
+          <MainText>Grazie per aver provato la demo di DressCode.</MainText>
         </Div>
         <DivCenter>
-          <DarkButton onPress={() => navigation.navigate("Thanks")}>
+          <DarkButton onPress={() => navigation.navigate("Home")}>
             <ButtonText>Fine</ButtonText>
           </DarkButton>
         </DivCenter>
@@ -40,4 +36,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export { Media };
+export { Thanks };

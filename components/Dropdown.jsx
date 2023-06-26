@@ -33,6 +33,7 @@ const Dropdown = () => {
       searchicon={<FontAwesome name="search" size={15} color={"white"} />}
       closeicon={<FontAwesome name="times" size={15} color={"white"} />}
       placeholder="Selezionare stile desiderato:"
+      notFoundText="Nessun risultato trovato"
       placeholderStyle={{ color: "#fff" }}
       defaultValue={selected}
       boxStyles={{

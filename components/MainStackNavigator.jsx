@@ -7,6 +7,7 @@ import { DemoThird } from "../screens/ThirdDemo";
 import { Result } from "../screens/Result";
 import { Welcome } from "../screens/Welcome";
 import { Media } from "../screens/Camera";
+import { Thanks } from "../screens/Thanks";
 import Auth from "../screens/Login";
 import Register from "../screens/Register";
 
@@ -67,6 +68,11 @@ function MainStackNavigator() {
       <Stack.Screen
         name="Media"
         component={Media}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Thanks"
+        component={Thanks}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>
